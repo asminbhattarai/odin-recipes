@@ -1,0 +1,230 @@
+/* Recipe Pages Styles */
+
+:root {
+  --color-primary: #2c3e50;
+  --color-secondary: #e74c3c;
+  --color-accent: #27ae60;
+  --color-text: #333;
+  --color-text-light: #666;
+  --color-bg: #f8f9fa;
+  --color-border: #ddd;
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  
+  /* Responsive Font Sizes */
+  --font-size-h1: clamp(1.75rem, 1.25rem + 2vw, 2.5rem);
+  --font-size-h2: clamp(1.3rem, 1.1rem + 1vw, 1.8rem);
+  --font-size-p: clamp(0.95rem, 0.9rem + 0.5vw, 1.1rem);
+}
+
+html {
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-primary);
+  color: white;
+  padding: clamp(1.5rem, 1rem + 2vw, 3rem);
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: var(--font-size-h1);
+  margin: 0;
+  font-weight: 700;
+}
+
+header p {
+  font-size: var(--font-size-p);
+  opacity: 0.9;
+  margin: 0;
+}
+
+header nav {
+  display: none;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+  padding-top: 0;
+}
+
+article {
+  background-color: white;
+  border-radius: 8px;
+  padding: clamp(1.5rem, 1rem + 2vw, 3rem);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+article h1 {
+  color: var(--color-primary);
+  font-size: var(--font-size-h1);
+  margin: 0 0 var(--spacing-md) 0;
+  font-weight: 700;
+  text-align: center;
+}
+
+figure {
+  margin: var(--spacing-lg) auto;
+  text-align: center;
+}
+
+figure img {
+  border-radius: 8px;
+  max-height: 400px;
+  object-fit: cover;
+  margin: auto;
+  margin-bottom: var(--spacing-sm);
+}
+
+figcaption {
+  color: var(--color-text-light);
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+section {
+  margin-bottom: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+}
+
+section h2 {
+  color: var(--color-secondary);
+  font-size: var(--font-size-h2);
+  margin: 0 0 var(--spacing-md) 0;
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--color-secondary);
+  font-weight: 700;
+}
+
+section p {
+  line-height: 1.8;
+  margin: 0 0 var(--spacing-md) 0;
+  color: var(--color-text-light);
+  font-size: var(--font-size-p);
+}
+
+ul, ol {
+  margin-left: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.8;
+}
+
+li strong {
+  color: var(--color-primary);
+}
+
+/* Nested lists */
+li ul, li ol {
+  margin-top: var(--spacing-sm);
+  margin-left: var(--spacing-lg);
+}
+
+footer {
+  background-color: var(--color-primary);
+  color: white;
+  text-align: center;
+  padding: clamp(1.5rem, 1rem + 1.5vw, 2.5rem);
+  margin-top: auto;
+}
+
+footer p {
+  margin: 0;
+  font-size: var(--font-size-p);
+}
+
+footer a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Breadcrumb Navigation */
+.breadcrumb {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: clamp(0.5rem, 0.25rem + 1vw, 1rem) clamp(1rem, 0.75rem + 1.5vw, 2rem);
+  font-size: var(--font-size-p);
+  color: var(--color-text-light);
+}
+
+.breadcrumb a {
+  color: var(--color-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #c0392b;
+  text-decoration: underline;
+}
+
+.breadcrumb span {
+  margin: 0 0.35rem;
+  color: var(--color-text-light);
+}
+
+/* Scroll to Top Button */
+
+@media (max-width: 768px) {
+  article h1 {
+    font-size: 2rem;
+  }
+
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  figure img {
+    max-height: 300px;
+  }
+
+  main {
+    padding: var(--spacing-md);
+  }
+
+  article {
+    padding: var(--spacing-md);
+  }
+
+  ul, ol {
+    margin-left: var(--spacing-md);
+  }
+
+  li ul, li ol {
+    margin-left: var(--spacing-md);
+  }
+}
