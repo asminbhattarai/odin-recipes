@@ -51,16 +51,19 @@ odin-recipes/
 │   │   ├── recipes.css
 │   │   └── reset.css
 │   ├── js/
-│   │   ├── scripts.js
-│   │   └── sw.js
+│   │   └── scripts.js
 │   ├── images/
 │   └── favicon/
 ├── recipes/
 │   ├── chow-mein.html
 │   ├── momo.html
 │   └── sel-roti.html
+├── .gitattributes
 ├── index.html
-└── README.md
+├── README.md
+├── robots.txt
+├── sitemap.xml
+└── sw.js
 ```
 
 ## License
