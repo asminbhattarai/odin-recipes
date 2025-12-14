@@ -22,9 +22,13 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img {
+img, svg {
   display: block;
   max-width: 100%;
+}
+
+ button {
+  font: inherit;
 }
 
 p, h1, h2 {
