@@ -3,8 +3,7 @@
 [![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PWA](https://img.shields.io/badge/PWA-Enabled-4BC51D.svg)](https://web.dev/progressive-web-apps/)
 
-A collection of Nepali recipes built with HTML, CSS, and vanilla JavaScript.  
-This project was created as part of The Odin Project curriculum to practice basic web development concepts.
+A collection of Nepali recipes built with HTML, CSS, and vanilla JavaScript. This project was created as part of The Odin Project curriculum to practice basic web development concepts.
 
 ## Features
 

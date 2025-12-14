@@ -103,16 +103,16 @@
     <!-- Service Worker Registration -->
     <script>
       (function () {
-        if (!("serviceWorker" in navigator)) return;
+        if (!("serviceWorker" in navigator)) {
+          console.error("ServiceWorker not supported in this browser");
+          return;
+        }
 
-        const logger = {
-          info: (msg) => {},
-          error: (msg, err) => console.error(msg, err),
-        };
+        console.log("ServiceWorker supported, attempting registration...");
 
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("/odin-recipes/assets/js/sw.js", {
+            .register("/odin-recipes/sw.js", {
               scope: "/odin-recipes/",
             })
             .then((registration) => {})

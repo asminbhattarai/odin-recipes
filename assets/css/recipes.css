@@ -219,6 +219,10 @@ footer a:hover {
   z-index: 999;
 }
 
+.scroll-to-top.show {
+  display: flex;
+}
+
 .scroll-to-top:hover {
   background-color: #c0392b;
   transform: translateY(-3px);
