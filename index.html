@@ -108,8 +108,6 @@
           return;
         }
 
-        console.log("ServiceWorker supported, attempting registration...");
-
         window.addEventListener("load", () => {
           navigator.serviceWorker
             .register("/odin-recipes/sw.js", {
