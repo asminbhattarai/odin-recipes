@@ -40,21 +40,25 @@
     <link
       rel="icon"
       type="image/png"
-      href="/assets/favicon/favicon-96x96.png"
+      href="/odin-recipes/assets/favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/odin-recipes/assets/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/odin-recipes/assets/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/assets/favicon/apple-touch-icon.png"
+      href="/odin-recipes/assets/favicon/apple-touch-icon.png"
     />
 
     <!-- PWA Meta Tags -->
     <meta name="apple-mobile-web-app-title" content="Odin Recipes" />
     <meta name="theme-color" content="#2c3e50" />
-    <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="/odin-recipes/assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -62,8 +66,8 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/assets/css/reset.css" />
-    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/odin-recipes/assets/css/reset.css" />
+    <link rel="stylesheet" href="/odin-recipes/assets/css/index.css" />
   </head>
   <body>
     <header>
@@ -76,9 +80,11 @@
         <h2>Our Recipes</h2>
         <nav>
           <ul>
-            <li><a href="/recipes/sel-roti.html">Sel Roti</a></li>
-            <li><a href="/recipes/momo.html">Momo</a></li>
-            <li><a href="/recipes/chow-mein.html">Chow Mein</a></li>
+            <li><a href="/odin-recipes/recipes/sel-roti.html">Sel Roti</a></li>
+            <li><a href="/odin-recipes/recipes/momo.html">Momo</a></li>
+            <li>
+              <a href="/odin-recipes/recipes/chow-mein.html">Chow Mein</a>
+            </li>
           </ul>
         </nav>
       </section>
@@ -92,7 +98,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/assets/js/scripts.js" defer></script>
+    <script src="/odin-recipes/assets/js/scripts.js" defer></script>
 
     <!-- Service Worker Registration -->
     <script>
@@ -106,7 +112,9 @@
 
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("/assets/js/sw.js", { scope: "/odin-recipes/" })
+            .register("/odin-recipes/assets/js/sw.js", {
+              scope: "/odin-recipes/",
+            })
             .then((registration) => {})
             .catch((err) => {
               logger.error("ServiceWorker registration failed:", err);
