@@ -50,8 +50,16 @@
       sizes="180x180"
       href="/assets/favicon/apple-touch-icon.png"
     />
+
+    <!-- PWA Meta Tags -->
     <meta name="apple-mobile-web-app-title" content="Odin Recipes" />
+    <meta name="theme-color" content="#2c3e50" />
     <link rel="manifest" href="/assets/favicon/site.webmanifest" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="/assets/css/reset.css" />
@@ -82,5 +90,26 @@
         sources.
       </p>
     </footer>
+
+    <!-- Service Worker Registration -->
+    <script>
+      (function () {
+        if (!("serviceWorker" in navigator)) return;
+
+        const logger = {
+          info: (msg) => {},
+          error: (msg, err) => console.error(msg, err),
+        };
+
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("/assets/js/sw.js", { scope: "/odin-recipes/" })
+            .then((registration) => {})
+            .catch((err) => {
+              logger.error("ServiceWorker registration failed:", err);
+            });
+        });
+      })();
+    </script>
   </body>
 </html>
