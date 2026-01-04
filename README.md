@@ -85,7 +85,9 @@ odin-recipes/
 │       ├── favicon.ico
 │       ├── apple-touch-icon.png
 │       ├── favicon.svg
-│       └── site.webmanifest
+│       ├── site.webmanifest
+│       ├── web-app-manifest-192x192.png
+│       └── web-app-manifest-512x512.png
 ├── recipes/
 │   ├── chow-mein.html
 │   ├── momo.html
@@ -95,7 +97,8 @@ odin-recipes/
 ├── README.md
 ├── robots.txt
 ├── sitemap.xml
-└── sw.js
+├── sw.js
+└── sw.min.js
 ```
 
 ## Technical Stack
@@ -110,7 +113,7 @@ odin-recipes/
 
 - **Open Graph**: Facebook/social sharing optimization
 - **Twitter Cards**: Twitter sharing optimization
-- **Structured Data**: Schema.org Recipe markup
+- **Structured Data**: Schema.org WebSite + Recipe markup
 - **Meta Tags**: Proper description and keywords
 - **Canonical URLs**: SEO-friendly linking
 
