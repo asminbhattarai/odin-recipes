@@ -13,8 +13,10 @@
   --spacing-md: 1.5rem;
   --spacing-lg: 2rem;
   --spacing-xl: 3rem;
-  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+
   /* Responsive Font Sizes */
   --font-size-h1: clamp(1.75rem, 1.25rem + 2vw, 2.5rem);
   --font-size-h2: clamp(1.3rem, 1.1rem + 1vw, 1.8rem);
@@ -127,7 +129,8 @@ section p {
   font-size: var(--font-size-p);
 }
 
-ul, ol {
+ul,
+ol {
   margin-left: var(--spacing-lg);
   margin-bottom: var(--spacing-md);
   list-style-position: inside;
@@ -144,7 +147,8 @@ li strong {
 }
 
 /* Nested lists */
-li ul, li ol {
+li ul,
+li ol {
   margin-top: var(--spacing-sm);
   margin-left: var(--spacing-lg);
 }
@@ -250,11 +254,13 @@ footer a:hover {
     padding: var(--spacing-md);
   }
 
-  ul, ol {
+  ul,
+  ol {
     margin-left: var(--spacing-md);
   }
 
-  li ul, li ol {
+  li ul,
+  li ol {
     margin-left: var(--spacing-md);
   }
 
