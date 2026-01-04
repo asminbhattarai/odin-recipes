@@ -1,3 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /recipes/
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Host and Sitemap
+Host: https://asminbhattarai.github.io
 Sitemap: https://asminbhattarai.github.io/odin-recipes/sitemap.xml
