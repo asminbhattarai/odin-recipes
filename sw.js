@@ -1,25 +1,26 @@
 const CACHE_NAME = "odin-recipes-cache-v1";
+const BASE_PATH = "/odin-recipes";
 
 // Install event - cache all static assets
 self.addEventListener("install", (event) => {
   self.skipWaiting();
 
   const urlsToCache = [
-    "/",
-    "/index.html",
-    "/assets/css/reset.css",
-    "/assets/css/index.css",
-    "/assets/css/recipes.css",
-    "/assets/js/scripts.js",
-    "/assets/images/chow-mein.png",
-    "/assets/images/momo.png",
-    "/assets/images/sel-roti.png",
-    "/assets/favicon/favicon.ico",
-    "/assets/favicon/apple-touch-icon.png",
-    "/assets/favicon/favicon.svg",
-    "/recipes/chow-mein.html",
-    "/recipes/momo.html",
-    "/recipes/sel-roti.html",
+    BASE_PATH + "/",
+    BASE_PATH + "/index.html",
+    BASE_PATH + "/assets/css/reset.css",
+    BASE_PATH + "/assets/css/index.css",
+    BASE_PATH + "/assets/css/recipes.css",
+    BASE_PATH + "/assets/js/scripts.js",
+    BASE_PATH + "/assets/images/chow-mein.png",
+    BASE_PATH + "/assets/images/momo.png",
+    BASE_PATH + "/assets/images/sel-roti.png",
+    BASE_PATH + "/assets/favicon/favicon.ico",
+    BASE_PATH + "/assets/favicon/apple-touch-icon.png",
+    BASE_PATH + "/assets/favicon/favicon.svg",
+    BASE_PATH + "/recipes/chow-mein.html",
+    BASE_PATH + "/recipes/momo.html",
+    BASE_PATH + "/recipes/sel-roti.html",
   ];
 
   event.waitUntil(
