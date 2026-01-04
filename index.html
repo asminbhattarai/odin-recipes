@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Base URL -->
-    <base href="/odin-recipes/" />
-
     <!-- Character Set and Viewport -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +19,7 @@
     />
     <meta
       name="keywords"
-      content="Nepali recipes, Sel Roti, Momo, Chow Mein, authentic cooking"
+      content="Nepali recipes, Sel Roti, Momo, Chow Mein, Odin Recipes, authentic cooking"
     />
     <meta name="author" content="Asmin Bhattarai" />
 
@@ -35,36 +32,88 @@
       property="og:description"
       content="Explore traditional Nepali recipes with step-by-step instructions."
     />
-    <meta property="og:image" content="/assets/favicon/favicon-96x96.png" />
+    <meta
+      property="og:image"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social-preview.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Odin Recipes - Authentic Nepali Recipes"
+    />
     <meta
       property="og:url"
       content="https://asminbhattarai.github.io/odin-recipes/"
     />
+    <meta property="og:site_name" content="Asmin's Odin Recipes" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social-preview.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Odin Recipes - Authentic Nepali Recipes"
+    />
+
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://asminbhattarai.github.io/odin-recipes/"
+    />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Nepali Recipes Collection",
+        "description": "A collection of authentic Nepali recipes including Momo, Sel Roti, and Chow Mein",
+        "url": "https://asminbhattarai.github.io/odin-recipes/",
+        "itemListElement": [
+          {
+            "@type": "Recipe",
+            "position": 1,
+            "name": "Sel Roti",
+            "url": "https://asminbhattarai.github.io/odin-recipes/recipes/sel-roti.html"
+          },
+          {
+            "@type": "Recipe",
+            "position": 2,
+            "name": "Momo",
+            "url": "https://asminbhattarai.github.io/odin-recipes/recipes/momo.html"
+          },
+          {
+            "@type": "Recipe",
+            "position": 3,
+            "name": "Chow Mein",
+            "url": "https://asminbhattarai.github.io/odin-recipes/recipes/chow-mein.html"
+          }
+        ]
+      }
+    </script>
 
     <!-- Favicon (auto generated) -->
     <link
       rel="icon"
       type="image/png"
-      href="/odin-recipes/assets/favicon/favicon-96x96.png"
+      href="assets/favicon/favicon-96x96.png"
       sizes="96x96"
     />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="/odin-recipes/assets/favicon/favicon.svg"
-    />
-    <link rel="shortcut icon" href="/odin-recipes/assets/favicon/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/odin-recipes/assets/favicon/apple-touch-icon.png"
+      href="assets/favicon/apple-touch-icon.png"
     />
 
     <!-- PWA Meta Tags -->
     <meta name="apple-mobile-web-app-title" content="Odin Recipes" />
     <meta name="theme-color" content="#2c3e50" />
-    <link rel="manifest" href="/odin-recipes/assets/favicon/site.webmanifest" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
@@ -72,9 +121,10 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/odin-recipes/assets/css/reset.css" />
-    <link rel="stylesheet" href="/odin-recipes/assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
+
   <body>
     <header>
       <h1>Odin Recipes</h1>
@@ -84,12 +134,68 @@
     <main>
       <section>
         <h2>Our Recipes</h2>
-        <nav>
+        <nav aria-label="Main Recipe Navigation">
           <ul>
-            <li><a href="/odin-recipes/recipes/sel-roti.html">Sel Roti</a></li>
-            <li><a href="/odin-recipes/recipes/momo.html">Momo</a></li>
             <li>
-              <a href="/odin-recipes/recipes/chow-mein.html">Chow Mein</a>
+              <div class="recipe-thumb">
+                <img
+                  src="assets/images/sel-roti.png"
+                  alt="Sel Roti"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerHTML = 'SR';
+                  "
+                />
+              </div>
+              <a
+                href="recipes/sel-roti.html"
+                title="View our Authentic Sel Roti Recipe"
+                >Sel Roti</a
+              >
+              <p>
+                Traditional sweet rice ring, crispy on the outside and soft
+                inside.
+              </p>
+            </li>
+            <li>
+              <div class="recipe-thumb">
+                <img
+                  src="assets/images/momo.png"
+                  alt="Momo"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerHTML = 'M';
+                  "
+                />
+              </div>
+              <a href="recipes/momo.html" title="View our Authentic Momo Recipe"
+                >Momo</a
+              >
+              <p>Delicious steamed dumplings with spicy tomato achar.</p>
+            </li>
+            <li>
+              <div class="recipe-thumb">
+                <img
+                  src="assets/images/chow-mein.png"
+                  alt="Chow Mein"
+                  loading="lazy"
+                  onerror="
+                    this.style.display = 'none';
+                    this.parentElement.innerHTML = 'CM';
+                  "
+                />
+              </div>
+              <a
+                href="recipes/chow-mein.html"
+                title="View our Authentic Chow Mein Recipe"
+                >Chow Mein</a
+              >
+              <p>
+                Nepali-style stir-fried noodles with vegetables and savory
+                sauces.
+              </p>
             </li>
           </ul>
         </nav>
@@ -104,7 +210,7 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/odin-recipes/assets/js/scripts.js" defer></script>
+    <script src="assets/js/scripts.js" defer></script>
 
     <!-- Service Worker Registration -->
     <script>
@@ -116,12 +222,12 @@
 
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("/odin-recipes/sw.js", {
-              scope: "/odin-recipes/",
+            .register("sw.js", {
+              scope: "./",
             })
             .then((registration) => {})
             .catch((err) => {
-              logger.error("ServiceWorker registration failed:", err);
+              console.error("ServiceWorker registration failed:", err);
             });
         });
       })();

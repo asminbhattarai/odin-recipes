@@ -23,38 +23,130 @@
       property="og:description"
       content="Traditional Nepali Momo recipe with homemade achar."
     />
-    <meta property="og:image" content="/odin-recipes/assets/images/momo.png" />
+    <meta
+      property="og:image"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Nepali Momo with sesame peanut tomato achar"
+    />
     <meta
       property="og:url"
       content="https://asminbhattarai.github.io/odin-recipes/recipes/momo.html"
     />
+    <meta property="og:site_name" content="Asmin's Odin Recipes" />
     <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:image"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Nepali Momo with sesame peanut tomato achar"
+    />
+
+    <link
+      rel="canonical"
+      href="https://asminbhattarai.github.io/odin-recipes/recipes/momo.html"
+    />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Recipe",
+        "name": "Momo - Authentic Nepali Dumplings",
+        "description": "Authentic Nepali momo filled with seasoned meat or vegetables, served with traditional sesame-peanut tomato achar.",
+        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png",
+        "author": {
+          "@type": "Person",
+          "name": "Asmin Bhattarai"
+        },
+        "keywords": "Momo recipe, Nepali dumplings, steamed dumplings, achar recipe",
+        "recipeCuisine": "Nepali",
+        "recipeIngredient": [
+          "2 cups all-purpose flour",
+          "1/2 tsp salt",
+          "Water as needed",
+          "250g minced chicken, buff, or finely chopped vegetables",
+          "1 medium onion, very finely chopped",
+          "2-3 cloves garlic, minced",
+          "1-inch ginger, minced",
+          "2 tbsp oil or melted ghee",
+          "Salt to taste",
+          "1/2 tsp black pepper",
+          "1/2 tsp cumin powder (optional)",
+          "Fresh coriander leaves",
+          "3 tbsp white sesame seeds",
+          "2 tbsp roasted peanuts",
+          "2 medium tomatoes",
+          "2-3 dried red chilies",
+          "2 cloves garlic",
+          "1-inch ginger",
+          "1/2 tsp timur (optional)",
+          "1 tsp mustard oil (optional)"
+        ],
+        "recipeInstructions": [
+          {
+            "@type": "HowToStep",
+            "name": "Prepare the dough",
+            "text": "Mix flour and salt, add water gradually, knead into a firm dough, cover and rest for 20–30 minutes."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Prepare the filling",
+            "text": "Combine minced meat or vegetables with onion, garlic, ginger, oil, salt, spices, and coriander; mix well."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Shape the momo",
+            "text": "Divide dough into small balls, roll thin, add filling, and pleat to seal."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Steam",
+            "text": "Arrange momo in a greased steamer and steam for 10–12 minutes until cooked."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Prepare the achar",
+            "text": "Roast sesame seeds, peanuts, tomatoes, and chilies; blend with garlic, ginger, coriander, salt, and timur; finish with mustard oil."
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Serve",
+            "text": "Serve hot momo with sesame-peanut tomato achar."
+          }
+        ]
+      }
+    </script>
 
     <!-- Icon (auto generated) -->
     <link
       rel="icon"
       type="image/png"
-      href="/odin-recipes/assets/icons/momo/favicon-96x96.png"
+      href="../assets/icons/momo/favicon-96x96.png"
       sizes="96x96"
     />
     <link
       rel="icon"
       type="image/svg+xml"
-      href="/odin-recipes/assets/icons/momo/favicon.svg"
+      href="../assets/icons/momo/favicon.svg"
     />
-    <link
-      rel="shortcut icon"
-      href="/odin-recipes/assets/icons/momo/favicon.ico"
-    />
+    <link rel="shortcut icon" href="../assets/icons/momo/favicon.ico" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/odin-recipes/assets/icons/momo/apple-touch-icon.png"
+      href="../assets/icons/momo/apple-touch-icon.png"
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/odin-recipes/assets/css/reset.css" />
-    <link rel="stylesheet" href="/odin-recipes/assets/css/recipes.css" />
+    <link rel="stylesheet" href="../assets/css/reset.css" />
+    <link rel="stylesheet" href="../assets/css/recipes.css" />
   </head>
   <body>
     <header>
@@ -62,8 +154,8 @@
       <p>Explore our collection of delicious Nepali recipes</p>
     </header>
 
-    <nav class="breadcrumb">
-      <a href="/odin-recipes/">Home</a>
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="../index.html">Home</a>
       <span>/</span>
       <span>Momo</span>
     </nav>
@@ -76,7 +168,7 @@
         <!-- Image -->
         <figure>
           <img
-            src="/odin-recipes/assets/images/momo.png"
+            src="../assets/images/momo.png"
             loading="lazy"
             decoding="async"
             alt="Nepali Momo with sesame peanut tomato achar"
@@ -226,77 +318,6 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="/odin-recipes/assets/js/scripts.js" defer></script>
-
-    <!-- Schema.org JSON-LD -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Recipe",
-        "name": "Momo - Authentic Nepali Dumplings",
-        "description": "Authentic Nepali momo filled with seasoned meat or vegetables, served with traditional sesame-peanut tomato achar.",
-        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png",
-        "author": {
-          "@type": "Person",
-          "name": "Asmin Bhattarai"
-        },
-        "keywords": "Momo recipe, Nepali dumplings, steamed dumplings, achar recipe",
-        "recipeCuisine": "Nepali",
-        "recipeIngredient": [
-          "2 cups all-purpose flour",
-          "1/2 tsp salt",
-          "Water as needed",
-          "250g minced chicken, buff, or finely chopped vegetables",
-          "1 medium onion, very finely chopped",
-          "2-3 cloves garlic, minced",
-          "1-inch ginger, minced",
-          "2 tbsp oil or melted ghee",
-          "Salt to taste",
-          "1/2 tsp black pepper",
-          "1/2 tsp cumin powder (optional)",
-          "Fresh coriander leaves",
-          "3 tbsp white sesame seeds",
-          "2 tbsp roasted peanuts",
-          "2 medium tomatoes",
-          "2-3 dried red chilies",
-          "2 cloves garlic",
-          "1-inch ginger",
-          "1/2 tsp timur (optional)",
-          "1 tsp mustard oil (optional)"
-        ],
-        "recipeInstructions": [
-          {
-            "@type": "HowToStep",
-            "name": "Prepare the dough",
-            "text": "Mix flour and salt, add water gradually, knead into a firm dough, cover and rest for 20–30 minutes."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Prepare the filling",
-            "text": "Combine minced meat or vegetables with onion, garlic, ginger, oil, salt, spices, and coriander; mix well."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Shape the momo",
-            "text": "Divide dough into small balls, roll thin, add filling, and pleat to seal."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Steam",
-            "text": "Arrange momo in a greased steamer and steam for 10–12 minutes until cooked."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Prepare the achar",
-            "text": "Roast sesame seeds, peanuts, tomatoes, and chilies; blend with garlic, ginger, coriander, salt, and timur; finish with mustard oil."
-          },
-          {
-            "@type": "HowToStep",
-            "name": "Serve",
-            "text": "Serve hot momo with sesame-peanut tomato achar."
-          }
-        ]
-      }
-    </script>
+    <script src="../assets/js/scripts.js" defer></script>
   </body>
 </html>
