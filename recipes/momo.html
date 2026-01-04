@@ -25,7 +25,7 @@
     />
     <meta
       property="og:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo/momo.png"
     />
     <meta
       property="og:image:alt"
@@ -42,7 +42,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/momo/momo.png"
     />
     <meta
       name="twitter:image:alt"
@@ -61,7 +61,7 @@
         "@type": "Recipe",
         "name": "Momo - Authentic Nepali Dumplings",
         "description": "Authentic Nepali momo filled with seasoned meat or vegetables, served with traditional sesame-peanut tomato achar.",
-        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/momo.png",
+        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/momo/momo.png",
         "author": {
           "@type": "Person",
           "name": "Asmin Bhattarai"
@@ -145,8 +145,8 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/recipes.css" />
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/recipes.min.css" />
   </head>
   <body>
     <header>
@@ -167,12 +167,18 @@
 
         <!-- Image -->
         <figure>
-          <img
-            src="../assets/images/momo.png"
-            loading="lazy"
-            decoding="async"
-            alt="Nepali Momo with sesame peanut tomato achar"
-          />
+          <picture>
+            <source
+              srcset="../assets/images/momo/momo.avif"
+              type="image/avif"
+            />
+            <img
+              src="../assets/images/momo/momo.png"
+              loading="lazy"
+              decoding="async"
+              alt="Nepali Momo with sesame peanut tomato achar"
+            />
+          </picture>
           <figcaption>Nepali Momo with Traditional Achar</figcaption>
         </figure>
 

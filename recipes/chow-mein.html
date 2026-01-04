@@ -25,7 +25,7 @@
     />
     <meta
       property="og:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein/chow-mein.png"
     />
     <meta property="og:image:alt" content="Nepali-style chow mein" />
     <meta
@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein/chow-mein.png"
     />
     <meta name="twitter:image:alt" content="Nepali-style chow mein" />
 
@@ -55,7 +55,7 @@
         "@type": "Recipe",
         "name": "Chow Mein - Authentic Nepali Noodles",
         "description": "A simple Nepali-style chow mein that focuses on fresh, crunchy vegetables, a balanced sauce, and optionally chicken, buff, or pork.",
-        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein.png",
+        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/chow-mein/chow-mein.png",
         "author": {
           "@type": "Person",
           "name": "Asmin Bhattarai"
@@ -134,8 +134,8 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/recipes.css" />
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/recipes.min.css" />
   </head>
   <body>
     <header>
@@ -156,12 +156,17 @@
 
         <!-- Image -->
         <figure>
-          <img
-            src="../assets/images/chow-mein.png"
-            loading="lazy"
-            decoding="async"
-            alt="Nepali-style chow mein"
-          />
+          <picture>
+            <source
+              srcset="../assets/images/chow-mein/chow-mein.avif"
+              type="image/avif"
+            />
+            <img
+              src="../assets/images/chow-mein/chow-mein.png"
+              loading="lazy"
+              decoding="async"
+              alt="Nepali-style chow mein"
+            />
           <figcaption>Nepali-style Chow Mein</figcaption>
         </figure>
 

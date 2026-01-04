@@ -34,7 +34,7 @@
     />
     <meta
       property="og:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social-preview.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social/preview.png"
     />
     <meta
       property="og:image:alt"
@@ -51,7 +51,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social-preview.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/social/preview.png"
     />
     <meta
       name="twitter:image:alt"
@@ -121,8 +121,8 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/reset.min.css" />
+    <link rel="stylesheet" href="assets/css/index.min.css" />
   </head>
 
   <body>
@@ -138,15 +138,21 @@
           <ul>
             <li>
               <div class="recipe-thumb">
-                <img
-                  src="assets/images/sel-roti.png"
-                  alt="Sel Roti"
-                  loading="lazy"
-                  onerror="
-                    this.style.display = 'none';
-                    this.parentElement.innerHTML = 'SR';
-                  "
-                />
+                <picture>
+                  <source
+                    srcset="assets/images/sel-roti/sel-roti.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    src="assets/images/sel-roti/sel-roti.png"
+                    alt="Sel Roti"
+                    loading="lazy"
+                    onerror="
+                      this.style.display = 'none';
+                      this.parentElement.innerHTML = 'SR';
+                    "
+                  />
+                </picture>
               </div>
               <a
                 href="recipes/sel-roti.html"
@@ -160,15 +166,21 @@
             </li>
             <li>
               <div class="recipe-thumb">
-                <img
-                  src="assets/images/momo.png"
-                  alt="Momo"
-                  loading="lazy"
-                  onerror="
-                    this.style.display = 'none';
-                    this.parentElement.innerHTML = 'M';
-                  "
-                />
+                <picture>
+                  <source
+                    srcset="assets/images/momo/momo.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    src="assets/images/momo/momo.png"
+                    alt="Momo"
+                    loading="lazy"
+                    onerror="
+                      this.style.display = 'none';
+                      this.parentElement.innerHTML = 'M';
+                    "
+                  />
+                </picture>
               </div>
               <a href="recipes/momo.html" title="View our Authentic Momo Recipe"
                 >Momo</a
@@ -177,15 +189,21 @@
             </li>
             <li>
               <div class="recipe-thumb">
-                <img
-                  src="assets/images/chow-mein.png"
-                  alt="Chow Mein"
-                  loading="lazy"
-                  onerror="
-                    this.style.display = 'none';
-                    this.parentElement.innerHTML = 'CM';
-                  "
-                />
+                <picture>
+                  <source
+                    srcset="assets/images/chow-mein/chow-mein.avif"
+                    type="image/avif"
+                  />
+                  <img
+                    src="assets/images/chow-mein/chow-mein.png"
+                    alt="Chow Mein"
+                    loading="lazy"
+                    onerror="
+                      this.style.display = 'none';
+                      this.parentElement.innerHTML = 'CM';
+                    "
+                  />
+                </picture>
               </div>
               <a
                 href="recipes/chow-mein.html"
@@ -222,7 +240,7 @@
 
         window.addEventListener("load", () => {
           navigator.serviceWorker
-            .register("sw.js", {
+            .register("sw.min.js", {
               scope: "./",
             })
             .then((registration) => {})

@@ -25,7 +25,7 @@
     />
     <meta
       property="og:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti/sel-roti.png"
     />
     <meta property="og:image:alt" content="Traditional Nepali sel roti" />
     <meta
@@ -38,7 +38,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:image"
-      content="https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti.png"
+      content="https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti/sel-roti.png"
     />
     <meta name="twitter:image:alt" content="Traditional Nepali sel roti" />
 
@@ -54,7 +54,7 @@
         "@type": "Recipe",
         "name": "Sel Roti - Traditional Nepali Fried Bread",
         "description": "Traditional Nepali sel roti is a sweet, ring-shaped fried bread made from rice flour and commonly prepared during festivals like Dashain and Tihar.",
-        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti.png",
+        "image": "https://asminbhattarai.github.io/odin-recipes/assets/images/sel-roti/sel-roti.png",
         "author": {
           "@type": "Person",
           "name": "Asmin Bhattarai"
@@ -125,8 +125,8 @@
     />
 
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/reset.css" />
-    <link rel="stylesheet" href="../assets/css/recipes.css" />
+    <link rel="stylesheet" href="../assets/css/reset.min.css" />
+    <link rel="stylesheet" href="../assets/css/recipes.min.css" />
   </head>
   <body>
     <header>
@@ -147,12 +147,18 @@
 
         <!-- Image -->
         <figure>
-          <img
-            src="../assets/images/sel-roti.png"
-            loading="lazy"
-            decoding="async"
-            alt="Traditional Nepali sel roti"
-          />
+          <picture>
+            <source
+              srcset="../assets/images/sel-roti/sel-roti.avif"
+              type="image/avif"
+            />
+            <img
+              src="../assets/images/sel-roti/sel-roti.png"
+              loading="lazy"
+              decoding="async"
+              alt="Traditional Nepali sel roti"
+            />
+          </picture>
           <figcaption>Sel Roti</figcaption>
         </figure>
 
