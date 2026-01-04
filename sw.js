@@ -1,31 +1,31 @@
 const CACHE_NAME = "odin-recipes-cache-v1";
-const BASE_PATH = "/odin-recipes";
 
 // Install event - cache all static assets
 self.addEventListener("install", (event) => {
   self.skipWaiting();
 
   const urlsToCache = [
-    BASE_PATH + "/",
-    BASE_PATH + "/index.html",
-    BASE_PATH + "/assets/css/reset.css",
-    BASE_PATH + "/assets/css/index.css",
-    BASE_PATH + "/assets/css/recipes.css",
-    BASE_PATH + "/assets/js/scripts.js",
-    BASE_PATH + "/assets/images/chow-mein.png",
-    BASE_PATH + "/assets/images/momo.png",
-    BASE_PATH + "/assets/images/sel-roti.png",
-    BASE_PATH + "/assets/favicon/apple-touch-icon.png",
-    BASE_PATH + "/assets/favicon/favicon.svg",
-    BASE_PATH + "/recipes/chow-mein.html",
-    BASE_PATH + "/recipes/momo.html",
-    BASE_PATH + "/recipes/sel-roti.html",
+    "/",
+    "/index.html",
+    "/assets/css/reset.css",
+    "/assets/css/index.css",
+    "/assets/css/recipes.css",
+    "/assets/js/scripts.js",
+    "/assets/images/chow-mein.png",
+    "/assets/images/momo.png",
+    "/assets/images/sel-roti.png",
+    "/assets/favicon/favicon.ico",
+    "/assets/favicon/apple-touch-icon.png",
+    "/assets/favicon/favicon.svg",
+    "/recipes/chow-mein.html",
+    "/recipes/momo.html",
+    "/recipes/sel-roti.html",
   ];
 
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(urlsToCache);
-    })
+    }),
   );
 });
 
@@ -40,10 +40,10 @@ self.addEventListener("activate", (event) => {
             if (cacheName !== CACHE_NAME) {
               return caches.delete(cacheName);
             }
-          })
+          }),
         );
       })
-      .then(() => self.clients.claim())
+      .then(() => self.clients.claim()),
   );
 });
 
@@ -59,8 +59,9 @@ self.addEventListener("fetch", (event) => {
         return fetch(event.request).then((response) => {
           // Cache successful responses
           if (response && response.status === 200) {
-            const cache = caches.open(CACHE_NAME).then((c) => {
-              c.put(event.request, response.clone());
+            const responseClone = response.clone();
+            caches.open(CACHE_NAME).then((cache) => {
+              cache.put(event.request, responseClone);
             });
           }
           return response;
@@ -68,6 +69,6 @@ self.addEventListener("fetch", (event) => {
       })
       .catch(() => {
         // Offline - no cache available
-      })
+      }),
   );
 });
